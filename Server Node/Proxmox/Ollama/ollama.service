@@ -1,0 +1,28 @@
+#### this is for making ollama accessible to other devices through port 11434
+#### accessible through "sudo systemctl edit ollama.service"
+
+### Editing /etc/systemd/system/ollama.service.d/override.co>
+### Anything between here and the comment below will become >
+
+[Service]
+Environment="OLLAMA_HOST=0.0.0.0:11434"
+Environment="OLLAMA_ORIGINS=*"
+Environment="OLLAMA_NUM_PARALLEL=1"
+
+### Lines below this comment will be discarded
+
+### /etc/systemd/system/ollama.service
+# [Unit]
+# Description=Ollama Service
+# After=network-online.target
+# 
+# [Service]
+# ExecStart=/usr/local/bin/ollama serve
+# User=ollama
+# Group=ollama
+# Restart=always
+# RestartSec=3
+# Environment="PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin>
+# 
+
+^G Help     ^O 

@@ -1,1 +1,1 @@
-Repo @https://github.com/ZittoZzz/ServerPlug-Remote
+Repo @ https://github.com/ZittoZzz/ServerPlug-Remote
