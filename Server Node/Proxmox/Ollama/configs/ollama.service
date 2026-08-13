@@ -25,4 +25,3 @@ Environment="OLLAMA_NUM_PARALLEL=1"
 # Environment="PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin>
 # 
 
-^G Help     ^O 
